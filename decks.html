@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Browse One Piece TCG decks and leader usage statistics.">
+
+    <title>One Piece TCG Meta | Decks</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="script.js" defer></script>
+
+</head>
+
+<body>
+
+<a class="skip-link" href="#main-content">
+    Skip to main content
+</a>
+
+
+<header class="site-header">
+
+    <div class="header-content">
+
+        <a class="logo" href="index.html">
+            <span class="logo-main">ONE PIECE</span>
+            <span class="logo-sub">TCG META</span>
+        </a>
+
+        <button class="menu-toggle"
+                type="button"
+                aria-expanded="false"
+                aria-controls="site-nav">
+            Menu
+        </button>
+
+        <nav id="site-nav"
+             class="site-nav"
+             aria-label="Main navigation">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a class="active"
+               href="decks.html"
+               aria-current="page">
+                Decks
+            </a>
+
+            <a href="leaders.html">
+                Leaders
+            </a>
+
+            <a href="about.html">
+                About
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main id="main-content">
+
+    <section class="page-hero">
+
+        <p class="eyebrow">
+            DECK DATABASE
+        </p>
+
+        <h1>
+            Explore the <span>Deck Meta</span>
+        </h1>
+
+        <p>
+            Browse leader usage and explore sample decks
+            from different strategies.
+        </p>
+
+    </section>
+
+
+    <section class="section">
+
+        <div class="deck-layout">
+
+
+            <!-- CHART -->
+
+            <div class="panel">
+
+                <div class="panel-heading">
+
+                    <div>
+
+                        <p class="eyebrow">
+                            META DATA
+                        </p>
+
+                        <h2>
+                            Leader Usage
+                        </h2>
+
+                    </div>
+
+                    <span class="data-badge">
+                        SAMPLE DATA
+                    </span>
+
+                </div>
+
+
+                <div class="bar-chart">
+
+                    <div class="bar-item">
+
+                        <div class="bar-info">
+                            <span>Leader A</span>
+                            <strong>18.4%</strong>
+                        </div>
+
+                        <div class="bar-track">
+                            <div class="bar-fill blue-fill"
+                                 style="width: 92%;">
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="bar-item">
+
+                        <div class="bar-info">
+                            <span>Leader B</span>
+                            <strong>15.7%</strong>
+                        </div>
+
+                        <div class="bar-track">
+                            <div class="bar-fill green-fill"
+                                 style="width: 78%;">
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="bar-item">
+
+                        <div class="bar-info">
+                            <span>Leader C</span>
+                            <strong>13.1%</strong>
+                        </div>
+
+                        <div class="bar-track">
+                            <div class="bar-fill blue-fill"
+                                 style="width: 65%;">
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="bar-item">
+
+                        <div class="bar-info">
+                            <span>Leader D</span>
+                            <strong>10.2%</strong>
+                        </div>
+
+                        <div class="bar-track">
+                            <div class="bar-fill green-fill"
+                                 style="width: 51%;">
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="bar-item">
+
+                        <div class="bar-info">
+                            <span>Leader E</span>
+                            <strong>8.9%</strong>
+                        </div>
+
+                        <div class="bar-track">
+                            <div class="bar-fill blue-fill"
+                                 style="width: 44%;">
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <p class="chart-note">
+                    These numbers are sample data for the
+                    website prototype.
+                </p>
+
+            </div>
+
+
+            <!-- DECK LIST -->
+
+            <aside class="panel deck-panel">
+
+                <div class="panel-heading">
+
+                    <div>
+
+                        <p class="eyebrow">
+                            DATABASE
+                        </p>
+
+                        <h2>
+                            Deck List
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <label for="deck-search">
+                    Search decks
+                </label>
+
+                <input
+                    id="deck-search"
+                    class="search-box"
+                    type="search"
+                    placeholder="Search by leader or deck..."
+                >
+
+
+                <ul id="deck-results"
+                    class="deck-results">
+
+                    <li>
+                        <a href="#"
+                           data-search="leader a red aggro">
+                            <span class="deck-icon blue-icon">
+                                A
+                            </span>
+
+                            <span>
+                                <strong>
+                                    Leader A
+                                </strong>
+
+                                <small>
+                                    Red Aggro
+                                </small>
+                            </span>
+
+                            <span class="arrow">
+                                →
+                            </span>
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="#"
+                           data-search="leader b blue control">
+                            <span class="deck-icon green-icon">
+                                B
+                            </span>
+
+                            <span>
+                                <strong>
+                                    Leader B
+                                </strong>
+
+                                <small>
+                                    Blue Control
+                                </small>
+                            </span>
+
+                            <span class="arrow">
+                                →
+                            </span>
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="#"
+                           data-search="leader c purple tempo">
+                            <span class="deck-icon blue-icon">
+                                C
+                            </span>
+
+                            <span>
+                                <strong>
+                                    Leader C
+                                </strong>
+
+                                <small>
+                                    Purple Tempo
+                                </small>
+                            </span>
+
+                            <span class="arrow">
+                                →
+                            </span>
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="#"
+                           data-search="leader d green midrange">
+                            <span class="deck-icon green-icon">
+                                D
+                            </span>
+
+                            <span>
+                                <strong>
+                                    Leader D
+                                </strong>
+
+                                <small>
+                                    Green Midrange
+                                </small>
+                            </span>
+
+                            <span class="arrow">
+                                →
+                            </span>
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="#"
+                           data-search="leader e black control">
+                            <span class="deck-icon blue-icon">
+                                E
+                            </span>
+
+                            <span>
+                                <strong>
+                                    Leader E
+                                </strong>
+
+                                <small>
+                                    Black Control
+                                </small>
+                            </span>
+
+                            <span class="arrow">
+                                →
+                            </span>
+                        </a>
+                    </li>
+
+                </ul>
+
+                <p id="no-results"
+                   class="no-results"
+                   hidden>
+                    No decks match your search.
+                </p>
+
+            </aside>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer class="site-footer">
+
+    <div class="footer-content">
+
+        <div>
+
+            <div class="footer-logo">
+                ONE PIECE TCG META
+            </div>
+
+            <p>
+                A student web development project
+                focused on the One Piece Card Game.
+            </p>
+
+        </div>
+
+        <div>
+
+            <p class="footer-title">
+                Navigation
+            </p>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="decks.html">
+                Decks
+            </a>
+
+            <a href="leaders.html">
+                Leaders
+            </a>
+
+            <a href="about.html">
+                About
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        <p>
+            One Piece TCG Meta is a student project
+            and is not affiliated with Bandai.
+        </p>
+
+    </div>
+
+</footer>
+
+</body>
+</html>

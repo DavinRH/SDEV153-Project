@@ -1,22 +1,23 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
-<head>
 
+<head>
     <meta charset="UTF-8">
 
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
 
     <meta name="description"
-          content="Browse One Piece TCG decks and leader usage statistics.">
+          content="One Piece TCG Meta website with leader rankings, deck usage, and meta information.">
 
-    <title>One Piece TCG Meta | Decks</title>
+    <title>One Piece TCG Meta | Home</title>
 
     <link rel="stylesheet" href="styles.css">
 
     <script src="script.js" defer></script>
-
 </head>
+
 
 <body>
 
@@ -30,9 +31,17 @@
     <div class="header-content">
 
         <a class="logo" href="index.html">
-            <span class="logo-main">ONE PIECE</span>
-            <span class="logo-sub">TCG META</span>
+
+            <span class="logo-main">
+                ONE PIECE
+            </span>
+
+            <span class="logo-sub">
+                TCG META
+            </span>
+
         </a>
+
 
         <button class="menu-toggle"
                 type="button"
@@ -41,17 +50,18 @@
             Menu
         </button>
 
+
         <nav id="site-nav"
              class="site-nav"
              aria-label="Main navigation">
 
-            <a href="index.html">
+            <a class="active"
+               href="index.html"
+               aria-current="page">
                 Home
             </a>
 
-            <a class="active"
-               href="decks.html"
-               aria-current="page">
+            <a href="decks.html">
                 Decks
             </a>
 
@@ -72,320 +82,315 @@
 
 <main id="main-content">
 
-    <section class="page-hero">
 
-        <p class="eyebrow">
-            DECK DATABASE
-        </p>
+    <section class="hero">
 
-        <h1>
-            Explore the <span>Deck Meta</span>
-        </h1>
+        <div class="hero-content">
 
-        <p>
-            Browse leader usage and explore sample decks
-            from different strategies.
-        </p>
+            <p class="eyebrow">
+                ONE PIECE CARD GAME
+            </p>
+
+            <h1>
+                Explore the <span>TCG Meta</span>
+            </h1>
+
+            <p class="hero-text">
+                A simple student project for exploring One Piece TCG
+                leaders, decks, usage statistics, and sample meta information.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a class="button button-primary"
+                   href="decks.html">
+                    Explore Decks
+                </a>
+
+                <a class="button button-secondary"
+                   href="leaders.html">
+                    View Leaders
+                </a>
+
+            </div>
+
+        </div>
 
     </section>
 
 
     <section class="section">
 
-        <div class="deck-layout">
+        <div class="section-heading">
+
+            <div>
+
+                <p class="eyebrow">
+                    FEATURED META
+                </p>
+
+                <h2>
+                    Featured Leaders
+                </h2>
+
+            </div>
+
+            <p>
+                Sample leader data showing three different
+                areas of the current website prototype.
+            </p>
+
+        </div>
 
 
-            <!-- CHART -->
+        <div class="leader-grid">
 
-            <div class="panel">
 
-                <div class="panel-heading">
+            <!-- MOST PLAYED -->
 
-                    <div>
+            <article class="leader-card">
 
-                        <p class="eyebrow">
-                            META DATA
-                        </p>
+                <div class="card-header">
 
-                        <h2>
-                            Leader Usage
-                        </h2>
-
-                    </div>
-
-                    <span class="data-badge">
-                        SAMPLE DATA
+                    <span class="card-tag blue-tag">
+                        MOST PLAYED
                     </span>
 
                 </div>
 
 
-                <div class="bar-chart">
+                <div class="leader-image blue-leader">
 
-                    <div class="bar-item">
+                    <img src="Images/Rocks.png"
+                         alt="Rocks leader card"
+                         class="leader-img">
 
-                        <div class="bar-info">
-                            <span>Rocks</span>
-                            <strong>18.4%</strong>
-                        </div>
-
-                        <div class="bar-track">
-                            <div class="bar-fill blue-fill"
-                                 style="width: 92%;">
-                            </div>
-                        </div>
-
-                    </div>
+                </div>
 
 
-                    <div class="bar-item">
+                <div class="leader-info">
 
-                        <div class="bar-info">
-                            <span>Robin</span>
-                            <strong>15.7%</strong>
-                        </div>
+                    <h3>
+                        Rocks
+                    </h3>
 
-                        <div class="bar-track">
-                            <div class="bar-fill green-fill"
-                                 style="width: 78%;">
-                            </div>
-                        </div>
+                    <p>
+                        Most Played Leader
+                    </p>
 
-                    </div>
+                    <div class="stat-row">
 
+                        <span>
+                            Usage
+                        </span>
 
-                    <div class="bar-item">
-
-                        <div class="bar-info">
-                            <span>Nami</span>
-                            <strong>13.1%</strong>
-                        </div>
-
-                        <div class="bar-track">
-                            <div class="bar-fill blue-fill"
-                                 style="width: 65%;">
-                            </div>
-                        </div>
-
-                    </div>
-
-
-                    <div class="bar-item">
-
-                        <div class="bar-info">
-                            <span>Mihawk</span>
-                            <strong>10.2%</strong>
-                        </div>
-
-                        <div class="bar-track">
-                            <div class="bar-fill green-fill"
-                                 style="width: 51%;">
-                            </div>
-                        </div>
-
-                    </div>
-
-
-                    <div class="bar-item">
-
-                        <div class="bar-info">
-                            <span>Sabo</span>
-                            <strong>8.9%</strong>
-                        </div>
-
-                        <div class="bar-track">
-                            <div class="bar-fill blue-fill"
-                                 style="width: 44%;">
-                            </div>
-                        </div>
+                        <strong>
+                            18.4%
+                        </strong>
 
                     </div>
 
                 </div>
 
+            </article>
 
-                <p class="chart-note">
-                    These numbers are sample data for the
-                    website prototype.
+
+            <!-- HIGHEST WIN RATE -->
+
+            <article class="leader-card">
+
+                <div class="card-header">
+
+                    <span class="card-tag green-tag">
+                        HIGHEST WIN RATE
+                    </span>
+
+                </div>
+
+
+                <div class="leader-image green-leader">
+
+                    <img src="Images/Robin.png"
+                         alt="Robin leader card"
+                         class="leader-img">
+
+                </div>
+
+
+                <div class="leader-info">
+
+                    <h3>
+                        Robin
+                    </h3>
+
+                    <p>
+                        Top Winrate Leader
+                    </p>
+
+                    <div class="stat-row">
+
+                        <span>
+                            Win Rate
+                        </span>
+
+                        <strong class="green-text">
+                            58.2%
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- OFF META -->
+
+            <article class="leader-card">
+
+                <div class="card-header">
+
+                    <span class="card-tag white-tag">
+                        OFF-META
+                    </span>
+
+                </div>
+
+
+                <div class="leader-image black-leader">
+
+                    <img src="Images/Nami.png"
+                         alt="Nami leader card"
+                         class="leader-img">
+
+                </div>
+
+
+                <div class="leader-info">
+
+                    <h3>
+                        Nami
+                    </h3>
+
+                    <p>
+                        Off-Meta Leader
+                    </p>
+
+                    <div class="stat-row">
+
+                        <span>
+                            Win Rate
+                        </span>
+
+                        <strong>
+                            54.7%
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <section class="quick-section">
+
+        <div class="quick-content">
+
+            <div>
+
+                <p class="eyebrow">
+                    QUICK ACCESS
                 </p>
+
+                <h2>
+                    Find what you need.
+                </h2>
 
             </div>
 
 
-            <!-- DECK LIST -->
+            <div class="quick-links">
 
-            <aside class="panel deck-panel">
+                <a href="decks.html">
 
-                <div class="panel-heading">
+                    <span class="quick-number">
+                        01
+                    </span>
 
-                    <div>
+                    <span>
 
-                        <p class="eyebrow">
-                            DATABASE
-                        </p>
+                        <strong>
+                            Browse Decks
+                        </strong>
 
-                        <h2>
-                            Deck List
-                        </h2>
+                        <small>
+                            View leader usage and sample deck lists.
+                        </small>
 
-                    </div>
+                    </span>
 
-                </div>
+                    <span class="arrow">
+                        →
+                    </span>
 
-
-                <label for="deck-search">
-                    Search decks
-                </label>
-
-                <input
-                    id="deck-search"
-                    class="search-box"
-                    type="search"
-                    placeholder="Search by leader or deck..."
-                >
+                </a>
 
 
-                <ul id="deck-results"
-                    class="deck-results">
+                <a href="leaders.html">
 
-                    <li>
-                        <a href="#"
-                           data-search="rocks red aggro">
+                    <span class="quick-number">
+                        02
+                    </span>
 
-                            <span class="deck-icon blue-icon">
-                                R
-                            </span>
+                    <span>
 
-                            <span>
-                                <strong>
-                                    Rocks
-                                </strong>
+                        <strong>
+                            Leader Tier List
+                        </strong>
 
-                                <small>
-                                    Red Aggro
-                                </small>
-                            </span>
+                        <small>
+                            See the sample S, A, B, and C tier rankings.
+                        </small>
 
-                            <span class="arrow">
-                                →
-                            </span>
+                    </span>
 
-                        </a>
-                    </li>
+                    <span class="arrow">
+                        →
+                    </span>
+
+                </a>
 
 
-                    <li>
-                        <a href="#"
-                           data-search="robin blue control">
+                <a href="about.html">
 
-                            <span class="deck-icon green-icon">
-                                R
-                            </span>
+                    <span class="quick-number">
+                        03
+                    </span>
 
-                            <span>
-                                <strong>
-                                    Robin
-                                </strong>
+                    <span>
 
-                                <small>
-                                    Blue Control
-                                </small>
-                            </span>
+                        <strong>
+                            About the Project
+                        </strong>
 
-                            <span class="arrow">
-                                →
-                            </span>
+                        <small>
+                            Learn about the purpose and technology used.
+                        </small>
 
-                        </a>
-                    </li>
+                    </span>
 
+                    <span class="arrow">
+                        →
+                    </span>
 
-                    <li>
-                        <a href="#"
-                           data-search="nami purple tempo">
+                </a>
 
-                            <span class="deck-icon blue-icon">
-                                N
-                            </span>
-
-                            <span>
-                                <strong>
-                                    Nami
-                                </strong>
-
-                                <small>
-                                    Purple Tempo
-                                </small>
-                            </span>
-
-                            <span class="arrow">
-                                →
-                            </span>
-
-                        </a>
-                    </li>
-
-
-                    <li>
-                        <a href="#"
-                           data-search="mihawk green midrange">
-
-                            <span class="deck-icon green-icon">
-                                M
-                            </span>
-
-                            <span>
-                                <strong>
-                                    Mihawk
-                                </strong>
-
-                                <small>
-                                    Green Midrange
-                                </small>
-                            </span>
-
-                            <span class="arrow">
-                                →
-                            </span>
-
-                        </a>
-                    </li>
-
-
-                    <li>
-                        <a href="#"
-                           data-search="sabo black control">
-
-                            <span class="deck-icon blue-icon">
-                                S
-                            </span>
-
-                            <span>
-                                <strong>
-                                    Sabo
-                                </strong>
-
-                                <small>
-                                    Black Control
-                                </small>
-                            </span>
-
-                            <span class="arrow">
-                                →
-                            </span>
-
-                        </a>
-                    </li>
-
-                </ul>
-
-                <p id="no-results"
-                   class="no-results"
-                   hidden>
-                    No decks match your search.
-                </p>
-
-            </aside>
+            </div>
 
         </div>
 
@@ -410,6 +415,7 @@
             </p>
 
         </div>
+
 
         <div>
 
@@ -437,6 +443,7 @@
 
     </div>
 
+
     <div class="footer-bottom">
 
         <p>
@@ -450,3 +457,4 @@
 
 </body>
 </html>
+```

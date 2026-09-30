@@ -1698,5 +1698,19 @@ input:focus-visible {
 
         transition: none !important;
     }
+/* ---------- LEADER IMAGES ---------- */
 
+.leader-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.mini-leader img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
 }
